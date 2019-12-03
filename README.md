@@ -1,6 +1,8 @@
 # Product catalog app
 
 Product catalog implemented with node.js, express.js, and mongodb
+npm version 6.11.3
+node version 13.2.0
 
 ## Get started
 
