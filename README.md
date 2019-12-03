@@ -4,7 +4,8 @@ Product catalog implemented with node.js, express.js, and mongodb
 
 ## Get started
 
-Application expects certain environment variables to be defined. During development dotenv was used for this purpose. Define your own environment variables with a .env file at project root level:
+Application expects certain environment variables to be defined. During development dotenv was used for this purpose. Define your own environment variables with a .env file at project root level
+
 Example:
 ```
 PORT=3001
@@ -14,13 +15,17 @@ SECRET='qwertyuiop123456789'
 OPENEXCHANGERATES_API_KEY='abc123'
 ```
 **PORT** - Which port application runs at
+
 **MONGODB_URI** - Connetion string for mongodb database for development
+
 **TEST_MONGODB_URI** - Connection string for mongodb database for integration testing
+
 **SECRET** - Secret for generating tokens during login
+
 **OPENEXCHANGERATES_API_KEY** - API key for currency conversion rates ([https://openexchangerates.org/](https://openexchangerates.org/))
 
 ---
-Once you have set up environment file you can proceed:
+Once you have set up environment file you can proceed
 
 Install dependencies:
 ```
