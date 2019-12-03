@@ -136,6 +136,65 @@ RESPONSE:
     }
 ]
 ````
+It is also possible to sort and query for products.
+Sort:
+```
+REQUEST:
+GET localhost:3001/api/products?sort=price
+
+RESPONSE:
+[
+    {
+        "likes": 0,
+        "title": "jacket",
+        "price": 150,
+        "user": {
+            "email": "antti@example.com",
+            "country": "Finland",
+            "id": "5de56cb8bdaf7fe5fe4258d1"
+        },
+        "id": "5de56d1636c6ede6095b50a3"
+    },
+    {
+        "likes": 0,
+        "title": "jeans",
+        "price": 80,
+        "user": {
+            "email": "antti@example.com",
+            "country": "Finland",
+            "id": "5de56cb8bdaf7fe5fe4258d1"
+        },
+        "id": "5de56d0f36c6ede6095b50a2"
+    }
+]
+```
+Query:
+```
+REQUEST:
+GET localhost:3001/api/products
+{
+	"price":
+		{
+			"gte": 100,
+			"lte": 200
+		}
+}
+
+RESPONSE:
+[
+    {
+        "likes": 0,
+        "title": "jacket",
+        "price": 150,
+        "user": {
+            "email": "antti@example.com",
+            "country": "Finland",
+            "id": "5de56cb8bdaf7fe5fe4258d1"
+        },
+        "id": "5de56d1636c6ede6095b50a3"
+    }
+]
+```
 
 **Create new product:**
 ```
