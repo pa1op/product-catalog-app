@@ -236,3 +236,29 @@ RESPONSE:
     "id": "5de56d1636c6ede6095b50a3"
 }
 ````
+
+**Delete Product:**
+
+**Update product:**
+````
+REQUEST:
+DELETE localhost:3001/api/products/5de56d1636c6ede6095b50a3
+Authorization: "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImplbnNAZXhhbXBsZS5jb21iLCJpZCI6IjYkZTU2Y2MxYmRhZjdmZTVmZTQyNThkMiIsImlhdCI6MTU3NTMxNjc4OH0.K4vIwnJUkPiIyEz8zWRD85AGM96Pc7q0xip-Zf-zcnE"
+````
+
+**Like a Product:**
+````
+REQUEST:
+PATCH localhost:3001/api/products/5de56d1636c6ede6095b50a3
+Authorization: "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImplbnNAZXhhbXBsZS5jb21iLCJpZCI6IjYkZTU2Y2MxYmRhZjdmZTVmZTQyNThkMiIsImlhdCI6MTU3NTMxNjc4OH0.K4vIwnJUkPiIyEz8zWRD85AGM96Pc7q0xip-Zf-zcnE"
+
+RESPONSE:
+{
+    "likes": 1,
+    "title": "jacket",
+    "price": 155,
+    "user": "5de56cb8bdaf7fe5fe4258d1",
+    "id": "5de56d1636c6ede6095b50a3"
+}
+````
+
