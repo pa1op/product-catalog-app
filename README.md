@@ -238,8 +238,6 @@ RESPONSE:
 ````
 
 **Delete Product:**
-
-**Update product:**
 ````
 REQUEST:
 DELETE localhost:3001/api/products/5de56d1636c6ede6095b50a3
